@@ -1,4 +1,5 @@
 Windows Registry Editor Version 5.00
+; Fichier crée et edité par el.s212 le 10/09/2026 et mit à jour le 10/09/2026
 
 [HKEY_CURRENT_USER\Software\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell]
 "ExecutionPolicy"="Unrestricted"
