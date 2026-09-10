@@ -9,5 +9,6 @@ start "" /wait "%userprofile%\Desktop\MediaCreationTool"
 cls
 explorer "%~dp0"
 echo Drag "!Disable Automatic Driver Download.reg" and "!Download the PC-Setup Pack" into your USB Stick...
+echo Then read "2. Windows reset guide.md" doc that gives you every steps needed to reset your PC properly.
 pause
 exit

@@ -1,0 +1,508 @@
+Windows Registry Editor Version 5.00
+
+; PANNEAU DE CONFIGURATION
+
+
+; ---DATE ET HEURE---
+; Désactiver "M'avertir lorsque l'horloge est modifée"
+[HKEY_CURRENT_USER\Control Panel\TimeDate]
+"DstNotification"=dword:00000000
+
+
+;--- OPTIONS D'ALIMENTATION---
+; Désactiver "Verrouiller", "Veille", "Hibernation" dans le menu d'alimentation
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings]
+"ShowLockOption"=dword:00000000
+"ShowSleepOption"=dword:00000000
+"ShowHibernateOption"=dword:00000000
+
+
+; ---OPTIONS D'ERGORNOMIE---
+; Désactiver "Lire cette section à haute voix" et "Toujours analyser cette section"
+[HKEY_CURRENT_USER\Software\Microsoft\Ease of Access]
+"selfscan"=dword:00000000
+"selfvoice"=dword:00000000
+
+; Configurer les touches souris
+[HKEY_CURRENT_USER\Control Panel\Accessibility\MouseKeys]
+"Flags"="130"
+"MaximumSpeed"="10"
+"TimeToMaximumSpeed"="5000"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility]
+"Sound on Activation"=dword:0
+"Warning Sounds"=dword:0
+
+; Désactiver les touches rémanantes
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="482"
+
+
+; ---OPTIONS DE L'EXPLORATEUR DE FICHIERS---
+; Désactiver l'affichage des fichiers, des dossiers récemment utilisés et des fichiers de Office.com
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"ShowCloudFilesInQuickAccess"=dword:00000000
+"ShowFrequent"=dword:00000000
+"ShowRecent"=dword:00000000
+
+; Ouvrir l'Explorateur de fichiers dans "Ce PC", affichier les fichiers cachés et les extensions des fichiers, activer l'affichage compact, désactiver l'assistant partage et les notifications du fournisseur de synchronisation
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"LaunchTo"=dword:00000001
+"SharingWizardOn"=dword:00000000
+"ShowSyncProviderNotifications"=dword:00000000
+"UseCompactMode"=dword:00000001
+
+; Enlever Accueil, Galerie et Réseau de l'explorateur de fichiers
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{f874310e-b6b7-47dc-bc84-b9e6b38f5903}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{e88865ea-0e1c-4e20-9aa6-edcd0212c87c}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}]
+"System.IsPinnedToNameSpaceTree"=dword:00000000
+
+
+; ---SON---
+; Désactiver le son au démarrage
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\BootAnimation]
+"DisableStartupSound"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\EditionOverrides]
+"UserSetting_DisableStartupSound"=dword:00000001
+
+; "Ne rien faire" quand Windows détecte des communications
+[HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio]
+"UserDuckingPreference"=dword:00000003
+
+
+; ---SOURIS---
+; Désactiver l'acceleration souris
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseSpeed"="0"
+"MouseThreshold1"="0"
+"MouseThreshold2"="0"
+
+
+
+; PARAMETRES WINDOWS
+
+
+
+; ---SYSTEME---
+
+; ECRAN
+; Activer les optimisations pour les jeux en mode fenêtré et désactiver VRR
+[HKEY_CURRENT_USER\Software\Microsoft\DirectX\UserGpuPreferences]
+"DirectXUserGlobalSettings"="VRROptimizeEnable=0;SwapEffectUpgradeEnable=1"
+
+; Activer HAGS
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"HwSchMode"=dword:00000002
+
+
+; NOTIFICATIONS
+; Désactiver les notifications
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PushNotifications]
+"ToastEnabled"=dword:00000000
+"LockScreenToastEnabled"=dword:00000000
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_CRITICAL_TOASTS_ABOVE_LOCK"=dword:00000000
+"NOC_GLOBAL_SETTING_ALLOW_NOTIFICATION_SOUND"=dword:00000000
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
+
+; Activer "Ne pas deranger automatiquement"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.donotdisturb.quietmoment$quietmomentlist\windows.data.donotdisturb.quietmoment$quietmomentpresentation]
+"Data"=hex:43,42,01,00,0a,02,01,00,2a,06,af,cc,c5,d3,06,2a,2b,0e,5a,43,42,01,\
+  00,c2,0a,01,d2,1e,26,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,\
+  2e,00,51,00,75,00,69,00,65,00,74,00,48,00,6f,00,75,00,72,00,73,00,50,00,72,\
+  00,6f,00,66,00,69,00,6c,00,65,00,2e,00,41,00,6c,00,61,00,72,00,6d,00,73,00,\
+  4f,00,6e,00,6c,00,79,00,ca,50,00,00,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.donotdisturb.quietmoment$quietmomentlist\windows.data.donotdisturb.quietmoment$quietmomentgame]
+"Data"=hex:43,42,01,00,0a,02,01,00,2a,06,b1,cc,c5,d3,06,2a,2b,0e,5e,43,42,01,\
+  00,c2,0a,01,d2,1e,28,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,\
+  2e,00,51,00,75,00,69,00,65,00,74,00,48,00,6f,00,75,00,72,00,73,00,50,00,72,\
+  00,6f,00,66,00,69,00,6c,00,65,00,2e,00,50,00,72,00,69,00,6f,00,72,00,69,00,\
+  74,00,79,00,4f,00,6e,00,6c,00,79,00,ca,50,00,00,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.donotdisturb.quietmoment$quietmomentlist\windows.data.donotdisturb.quietmoment$quietmomentfullscreen]
+"Data"=hex:43,42,01,00,0a,02,01,00,2a,06,b2,cc,c5,d3,06,2a,2b,0e,5a,43,42,01,\
+  00,c2,0a,01,d2,1e,26,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,\
+  2e,00,51,00,75,00,69,00,65,00,74,00,48,00,6f,00,75,00,72,00,73,00,50,00,72,\
+  00,6f,00,66,00,69,00,6c,00,65,00,2e,00,41,00,6c,00,61,00,72,00,6d,00,73,00,\
+  4f,00,6e,00,6c,00,79,00,ca,50,00,00,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.donotdisturb.quietmoment$quietmomentlist\windows.data.donotdisturb.quietmoment$quietmomentpostoobe]
+"Data"=hex:43,42,01,00,0a,02,01,00,2a,06,e3,cc,c5,d3,06,2a,2b,0e,5e,43,42,01,\
+  00,c2,0a,01,d2,1e,28,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,\
+  2e,00,51,00,75,00,69,00,65,00,74,00,48,00,6f,00,75,00,72,00,73,00,50,00,72,\
+  00,6f,00,66,00,69,00,6c,00,65,00,2e,00,50,00,72,00,69,00,6f,00,72,00,69,00,\
+  74,00,79,00,4f,00,6e,00,6c,00,79,00,ca,50,00,00,00,00,00
+
+; Notifications prioritaires
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.donotdisturb.quiethoursprofile$quiethoursprofilelist\windows.data.donotdisturb.quiethoursprofile$microsoft.quiethoursprofile.priorityonly]
+"Data"=hex:43,42,01,00,0a,02,01,00,2a,06,f1,cd,c5,d3,06,2a,2b,0e,bf,01,43,42,\
+  01,00,c2,0a,01,cd,14,06,02,05,00,00,01,01,02,00,03,01,04,00,cc,32,12,02,28,\
+  4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,2e,00,53,00,63,00,72,\
+  00,65,00,65,00,6e,00,53,00,6b,00,65,00,74,00,63,00,68,00,5f,00,38,00,77,00,\
+  65,00,6b,00,79,00,62,00,33,00,64,00,38,00,62,00,62,00,77,00,65,00,21,00,41,\
+  00,70,00,70,00,29,57,00,69,00,6e,00,64,00,6f,00,77,00,73,00,2e,00,53,00,79,\
+  00,73,00,74,00,65,00,6d,00,2e,00,4e,00,65,00,61,00,72,00,53,00,68,00,61,00,\
+  72,00,65,00,45,00,78,00,70,00,65,00,72,00,69,00,65,00,6e,00,63,00,65,00,52,\
+  00,65,00,63,00,65,00,69,00,76,00,65,00,00,00,00,00
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.StartupApp]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\Windows.SystemToast.AutoPlay]
+
+; Paramètres supplémentaires
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338389Enabled"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement]
+"ScoobeSystemSettingEnabled"=dword:00000000
+
+
+; Concentration
+; Désactiver la concentration
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.shell.focussessionactivetheme\windows.data.shell.focussessionactivetheme${1b019365-25a5-4ff1-b50a-c155229afc8f}]
+"Data"=hex:43,42,01,00,0a,00,2a,06,a7,d2,c5,d3,06,2a,2b,0e,08,43,42,01,00,c2,\
+  0a,01,00,00,00,00
+  
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.shell.focussessionactivetheme\windows.data.shell.focussessionactivetheme${1b019365-25a5-4ff1-b50a-c155229afc8f}]
+"Data"=hex:43,42,01,00,0a,00,2a,06,a7,d2,c5,d3,06,2a,2b,0e,08,43,42,01,00,c2,\
+  0a,01,00,00,00,00
+  
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.shell.focussessionactivetheme\windows.data.shell.focussessionactivetheme${1b019365-25a5-4ff1-b50a-c155229afc8f}]
+"Data"=hex:43,42,01,00,0a,00,2a,06,a7,d2,c5,d3,06,2a,2b,0e,08,43,42,01,00,c2,\
+  0a,01,00,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CloudStore\Store\DefaultAccount\Current\default$windows.data.shell.focussessionactivetheme\windows.data.shell.focussessionactivetheme${1b019365-25a5-4ff1-b50a-c155229afc8f}]
+"Data"=hex:43,42,01,00,0a,00,2a,06,a7,d2,c5,d3,06,2a,2b,0e,08,43,42,01,00,c2,\
+  0a,01,00,00,00,00
+
+
+; Assistant de stockage
+; Désactiver l'assistant de stockage
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\StorageSense\Parameters\StoragePolicy]
+"01"=dword:00000000
+"04"=dword:00000000
+"08"=dword:00000000
+"32"=dword:00000000
+"256"=dword:00000000
+"2048"=dword:00000000
+"StoragePoliciesChanged"=dword:00000001
+"StoragePoliciesNotified"=dword:00000001
+
+
+; PARTAGE DE PROXIMITE
+; Désactiver "Partager entre les appareils"
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CDP]
+"CdpSessionUserAuthzPolicy"=dword:00000000
+"DragTrayEnabled"=dword:00000000
+"EnableRemoteLaunchToast"=dword:00000000
+"NearShareChannelUserAuthzPolicy"=dword:00000000
+"RomeSdkChannelUserAuthzPolicy"=dword:00000000
+
+
+; MULTITACHE
+; Alt-tab
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"EnableSnapAssistFlyout"=dword:00000000
+"EnableSnapBar"=dword:00000000
+"MultiTaskingAltTabFilter"=dword:00000003
+
+
+; AVANCE
+; Activer "Terminer la tâche"
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\TaskbarDeveloperSettings]
+"TaskbarEndTask"=dword:00000001
+
+
+; RESOLUTION DES PROBLEMES
+; Ne rien exécuter
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsMitigation]
+"UserPreference"=dword:00000001
+
+
+; PRESSE-PAPIER
+; Désactiver l'historique du presse-papier
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Clipboard]
+"EnableClipboardHistory"=dword:00000000
+
+
+; INFORMATIONS SYSTEME
+; Désactiver les effets visuels inutiles
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
+"VisualFXSetting"=dword:3
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"UserPreferencesMask"=hex(2):90,12,03,80,10,00,00,00
+"DragFullWindows"=dword:0
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"EnableAeroPeek"=dword:0
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"ListviewAlphaSelect"=dword:0
+"ListviewShadow"=dword:0
+"TaskbarAnimations"=dword:0
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MinAnimate"="0"
+
+; Désactiver "Autoriser les connexions d'assistance a distance"
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+"fAllowToGetHelp"=dword:00000000
+
+; Désactiver le téléchargement automatique des applications des fabricants
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+
+
+; ---Bluetooth et appareils---
+
+; IMPRIMANTES
+; Ne pas laisser Windows gérer mon imprimante par défaut
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows]
+"LegacyDefaultPrinterMode"=dword:00000001
+
+
+; EXECUTION AUTOMATIQUE
+; Désactiver l'exécution automatique
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers]
+"DisableAutoplay"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\CameraAlternate\ShowPicturesOnArrival]
+@="MSTakeNoAction"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers\StorageOnArrival]
+@="MSTakeNoAction"
+
+
+; USB
+; Désactiver "M'avertir en cas de problèmes"
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Shell\USB]
+"NotifyOnUsbErrors"=dword:00000000
+
+
+
+; ---PERSONNALISATION---
+
+; ARRIERE-PLAN
+; Arriere-plan noir
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"WallPaper"=""
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers]
+"BackgroundType"=dword:00000001
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Background "="0 0 0"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\DesktopSpotlight\Settings]
+"EnabledState"=dword:00000000
+
+
+; COULEURS
+; Désactiver la transparence et activer le mode sombre
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"AppsUseLightTheme"=dword:00000000
+"EnableTransparency"=dword:00000000
+"SystemUsesLightTheme"=dword:00000000
+
+; ECLAIRAGE DYNAMIQUE
+; Désactiver l'éclairage dynamique
+[HKEY_CURRENT_USER\Software\Microsoft\Lighting]
+"AmbientLightingEnabled"=dword:00000000
+"ControlledByForegroundApp"=dword:00000000
+
+
+; ECRAN DE VERROUILLAGE
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lock Screen]
+"LockScreenWidgetsEnabled"=dword:00000000
+"LockScreenWidgetsSystemCurationEnabled"=dword:00000000
+
+
+; DEMRARRER
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Start_TrackProgs"=dword:00000000
+"Start_TrackDocs"=dword:00000000
+"Start_IrisRecommendations"=dword:00000000
+"Start_AccountNotifications"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start]
+"ShowRecentList"=dword:00000000
+
+; Afficher le bouton paramètres dans le menu démarrer
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Start]
+"VisiblePlaces"=hex:86,08,73,52,aa,51,43,42,9f,7b,27,76,58,46,59,d4
+
+
+; Barre des tâches
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"IconSizePreference"=dword:00000001
+"IsEnabled"=dword:00000000
+"ShowTaskViewButton"=dword:00000000
+"TaskbarAl"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
+
+; Désactiver le clavier tactile sur la barre des tâches
+[HKEY_CURRENT_USER\Software\Microsoft\TabletTip\1.7]
+"EmojiAndMoreIconVisibilityState"=dword:00000000
+"TipbandDesiredVisibility"=dword:00000000
+
+
+
+; ---APPLICATIONS---
+
+; CARTES
+; Ne pas mettre à jour automatiquement
+[HKEY_LOCAL_MACHINE\SYSTEM\Maps]
+"AutoUpdateEnabled"=dword:00000000
+
+
+; REPRENDRE
+; Désactiver Reprendre
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CrossDeviceResume\Configuration]
+"IsResumeAllowed"=dword:00000000
+
+
+
+; ---COMPTES---
+
+; Désactiver utiliser mes infos de connexion
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000000
+
+
+
+; ---JEUX---
+
+; GAMEBAR ET MODE JEU
+[HKEY_CURRENT_USER\Software\Microsoft\GameBar]
+"AutoGameModeEnabled"=dword:00000001
+"GamepadNexusChordEnabled"=dword:00000000
+"UseNexusForGameBarEnabled"=dword:00000000
+
+
+
+; ---ACCESSIBILITE---
+
+; Désactiver les touches filtres et rémanantes (Depuis immersivecontrolpanel)
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="2"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"AutoRepeatDelay"="0"
+"AutoRepeatRate"="0"
+"BounceTime"="0"
+"DelayBeforeAcceptance"="0"
+"Flags"="2"
+
+
+
+; ---CONFIDENTIALITE ET SECURITE---
+
+; Recommandations & des offres
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\SystemSettings\AccountNotifications]
+"EnableAccountNotifications"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SubscribedContent-338389Enabled"=dword:00000000
+"SubscribedContent-338393Enabled"=dword:00000000
+"SubscribedContent-353694Enabled"=dword:00000000
+"SubscribedContent-353696Enabled"=dword:00000000
+
+
+; Entree manuscrite
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"RestrictImplicitInkCollection"=dword:00000001
+"RestrictImplicitTextCollection"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Personalization\Settings]
+"AcceptedPrivacyPolicy"=dword:00000000
+
+
+; Diagnostics et commentaires
+[HKEY_CURRENT_USER\Software\Microsoft\Siuf\Rules]
+"NumberOfSIUFInPeriod"=dword:00000000
+
+
+; Rechercher
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings]
+"IsAADCloudSearchEnabled"=dword:00000000
+"IsDeviceSearchHistoryEnabled"=dword:00000000
+"IsGlobalWebSearchProviderToggleEnabled"=dword:00000000
+"IsMSACloudSearchEnabled"=dword:00000000
+
+
+; Autres paramètres
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppPrivacy]
+"LetAppsAccessLocation"=dword:00000002
+"LetAppsAccessNotifications"=dword:00000002
+"LetAppsAccessAccountInfo"=dword:00000002
+"LetAppsAccessContacts"=dword:00000002
+"LetAppsAccessCalendar"=dword:00000002
+"LetAppsAccessCallHistory"=dword:00000002
+"LetAppsAccessEmail"=dword:00000002
+"LetAppsAccessTasks"=dword:00000002
+"LetAppsAccessMessaging"=dword:00000002
+"LetAppsAccessRadios"=dword:00000002
+"LetAppsSyncWithDevices"=dword:00000002
+"LetAppsAccessPhone"=dword:00000002
+"LetAppsGetDiagnosticInfo"=dword:00000002
+"LetAppsActivateWithVoice"=dword:00000002
+"LetAppsAccessGraphicsCaptureProgrammatic"=dword:00000002
+"LetAppsAccessPasskeys"=dword:00000002
+"LetAppsAccessSystemAIModels"=dword:00000002
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\UserLocationOverridePrivacySetting]
+"Value"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"ShowGlobalPrompts"=dword:00000000
+
+
+
+; ---WINDOWS UPDATE---
+
+; Mettre en pause Windows Update
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"PauseFeatureUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseFeatureUpdatesEndTime"="2099-12-31T23:59:59Z"
+"PauseQualityUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseQualityUpdatesEndTime"="2099-12-31T23:59:59Z"
+"PauseUpdatesExpiryTime"="2099-12-31T23:59:59Z"
+"PauseUpdatesStartTime"="2000-01-01T00:00:00Z"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings]
+"PausedFeatureDate"="2000-01-01 00:00:00"
+"PausedFeatureStatus"=dword:00000001
+"PausedQualityDate"="2000-01-01 00:00:00"
+"PausedQualityStatus"=dword:00000001
+
+; Désactiver l'optimisation de la distribution
+[HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings]
+"DownloadMode"=dword:00000000
+"DownloadModeProvider"=dword:00000008
+
+
+
+; ---MICROSOFT STORE---
+; Désactiver les mises à jour automatiques
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsStore\WindowsUpdate]
+"AutoDownload"=dword:00000002
