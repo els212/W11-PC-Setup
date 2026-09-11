@@ -8,4 +8,5 @@ powershell "IWR "https://codeload.github.com/els212/W11-PC-Setup/zip/refs/heads/
 ```
 
 - <h1 id="bios">1. BIOS<a href="#bios">(permalink)</a></h1>
+Configuring youy BIOS settings is the most important step if you really need performance improvements.
     - <h2 id="bios-update">1.1. BIOS Update<a href="#bios-update">(permalink)</a></h2>
