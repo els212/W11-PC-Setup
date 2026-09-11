@@ -1,0 +1,129 @@
+Windows Registry Editor Version 5.00
+
+; Diagnostics Tracking Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+
+; dmwappushservice
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmwappushservice]
+"Start"=dword:00000004
+
+; Diagnostic Policy Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DPS]
+"Start"=dword:00000004
+
+; Diagnostic Service Host
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiServiceHost]
+"Start"=dword:00000004
+
+; Diagnostic System Host
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WdiSystemHost]
+"Start"=dword:00000004
+
+; Windows Error Reporting
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
+"Start"=dword:00000004
+
+; Print Spooler
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler]
+"Start"=dword:00000004
+
+; Remote Desktop Services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService]
+"Start"=dword:00000004
+
+; Smart Card
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SCardSvr]
+"Start"=dword:00000004
+
+; Smart Card Device Enumeration
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ScDeviceEnum]
+"Start"=dword:00000004
+
+; Windows Insider Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wisvc]
+"Start"=dword:00000004
+
+; Downloaded Maps Manager
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker]
+"Start"=dword:00000004
+
+; Geolocation Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]
+"Start"=dword:00000004
+
+; Retail Demo Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RetailDemo]
+"Start"=dword:00000004
+
+; AllJoyn Router Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AJRouter]
+"Start"=dword:00000004
+
+; Program Compatibility Assistant Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
+"Start"=dword:00000004
+
+; Windows Mobile Hotspot Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\icssvc]
+"Start"=dword:00000004
+
+; Remote Desktop Configuration
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SessionEnv]
+"Start"=dword:00000004
+
+; Remote Desktop Configuration
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TabletInputService]
+"Start"=dword:00000004
+
+; Windows Image Acquisition
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\stisvc]
+"Start"=dword:00000004
+
+; Windows Connect Now
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wcncsvc]
+"Start"=dword:00000004
+
+; Parental Controls
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WpcMonSvc]
+"Start"=dword:00000004
+
+; Portable Device Enumerator Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WPDBusEnum]
+"Start"=dword:00000004
+
+; Phone Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PhoneSvc]
+"Start"=dword:00000004
+
+; Network connection broker
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NcbSvc]
+"Start"=dword:00000004
+
+; Windows Biometric Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WbioSrvc]
+"Start"=dword:00000004
+
+; Enterprise App Management Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EntAppSvc]
+"Start"=dword:00000004
+
+; Internet connection sharing
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess]
+"Start"=dword:00000004
+
+; Netlogon
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netlogon]
+"Start"=dword:00000004
+
+; Themes
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Themes]
+"Start"=dword:00000004
+
+; RasMan
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan]
+"Start"=dword:00000004
+
+; midisrv
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\midisrv]
+"Start"=dword:00000004

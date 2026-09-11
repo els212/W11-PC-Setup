@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"PauseFeatureUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseFeatureUpdatesEndTime"="2099-12-31T23:59:59Z"
+"PauseQualityUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseQualityUpdatesEndTime"="2099-12-31T23:59:59Z"
+"PauseUpdatesExpiryTime"="2099-12-31T23:59:59Z"
+"PauseUpdatesStartTime"="2000-01-01T00:00:00Z"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings]
+"PausedFeatureDate"="2000-01-01 00:00:00"
+"PausedFeatureStatus"=dword:00000001
+"PausedQualityDate"="2000-01-01 00:00:00"
+"PausedQualityStatus"=dword:00000001
