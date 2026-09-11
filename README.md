@@ -33,4 +33,25 @@ At a minimum, you should: enable XMP/EXPO/DOCP, disable power-saving features, e
 
 
 <h1 id="windows-reset">3. Windows Reset<a href="#windows-reset"></a></h1>
-Plug in a 8GB USB stick of at least to proceed. Make sure to save files of your USB stick cause this will erase everything. Download Windows 11 ISO and rufus then set up your USB stick to make it bootable and install Windows with. It can take longer depends on your network and USB speed.
+You should follow this guide to install Windows without a microsoft account and avoid automatic drivers downloads. Plug in a USB stick of at least 8GB to proceed. Make sure to save the files on your USB stick because this will erase everything. Download Windows 11 ISO and Rufus then set up your USB stick to make it bootable and install Windows with. It can take longer depending on your network and USB speed.
+
+When your USB stick is ready, create a .reg file and paste this:
+```reg
+Windows Registry Editor Version 5.00
+; Fichier créé et edité par el.s212 le 10/09/2026 et mis à jour le 10/09/2026
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+```
+
+Then install Windows with network cable unplugged. When you're in OOBE setup, if you don't see the "I don't have Internet" button, press "SHIFT + F10", a cmd window will open, then enter this command:
+```cmd
+oobe\bypassnro
+```
+Proceed to normal setup without a microsoft account. Once on the desktop, run the `.reg` that you created. Restart your PC and plug your network cable back in.
