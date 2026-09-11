@@ -8,6 +8,7 @@ powershell "IWR "https://codeload.github.com/els212/W11-PC-Setup/zip/refs/heads/
 ```
 
 <h1 id="table-of-contents">TABLE OF CONTENTS<a href="#table-of-contents"></a></h1>
+
 - [1. BIOS](#bios)
     - [1.1. BIOS Update](#bios-update)
     - [1.2. BIOS Settings](#bios-settings)
