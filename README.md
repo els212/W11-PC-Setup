@@ -33,10 +33,10 @@ At a minimum, you should: enable XMP/EXPO/DOCP, disable power-saving features, e
 
 
 <h1 id="windows-reset">3. Windows Reset<a href="#windows-reset"></a></h1>
-You should follow this guide to install Windows without a microsoft account and avoid automatic drivers downloads. Plug in a USB stick of at least 8GB to proceed. Make sure to save the files on your USB stick because this will erase everything.
-Download:
-    - Windows 11 ISO: https://www.microsoft.com/en-us/software-download/windows11
-    - Rufus: https://rufus.ie/en/
+You should follow this guide to install Windows without a microsoft account and avoid automatic drivers downloads. Plug in a USB stick of at least 8GB to proceed. Make sure to save the files on your USB stick because this will erase everything.<br>
+Download:<br>
+    - Windows 11 ISO: https://www.microsoft.com/en-us/software-download/windows11<br>
+    - Rufus: https://rufus.ie/en/<br>
 Then set up your USB stick to make it bootable and install Windows with. It can take longer depending on your network and USB speed.
 
 When your USB stick is ready, create a .reg file and paste this:
