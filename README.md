@@ -22,11 +22,11 @@ You also need to save your actual BIOS settings, important files on your disk an
 <h1 id="bios">1. BIOS<a href="#bios"></a></h1>
 Configuring your BIOS settings is the most important step if you're looking to improve performance.
 
-    <h2 id="bios-update">1.1. BIOS Update<a href="#bios-update"></a></h2>
-    Make sure your BIOS is up to date (latest non-beta version) before doing anything.
+<h2 id="bios-update">1.1. BIOS Update<a href="#bios-update"></a></h2>
+Make sure your BIOS is up to date (latest non-beta version) before doing anything.
 
-    <h2 id="bios-settings">1.2. BIOS Settings<a href="#bios-settings"></a></h2>
-    At a minimum, you should: enable XMP/EXPO/DOCP, disable power-saving features, enable resizable bar, apply basic overclock settings with PBO on AMD CPUs, set a proper fan curve, and disable auto download motherboard software. If you play games with demanding anti-cheats, make sure to enable their required BIOS settings.
+<h2 id="bios-settings">1.2. BIOS Settings<a href="#bios-settings"></a></h2>
+At a minimum, you should: enable XMP/EXPO/DOCP, disable power-saving features, enable resizable bar, apply basic overclock settings with PBO on AMD CPUs, set a proper fan curve, and disable auto download motherboard software. If you play games with demanding anti-cheats, make sure to enable their required BIOS settings.
 
 
 <h1 id="hardware-check">2. Hardware Check<a href="#hardware-check"></a></h1>
