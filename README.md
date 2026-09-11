@@ -1,6 +1,6 @@
 # W11-PC-Setup
 
-> The purpose of this guide is to help you to setup your hardware correctly for best performance in your favourite games.
+> The purpose of this guide is to help you to set up your hardware correctly for best performance in your favourite games.
 
 Command to download the PC-Setup Pack:
 ```cmd
@@ -12,18 +12,18 @@ powershell "IWR "https://codeload.github.com/els212/W11-PC-Setup/zip/refs/heads/
 - [1. BIOS](#bios)
     - [1.1. BIOS Update](#bios-update)
     - [1.2. BIOS Settings](#bios-settings)
-- [2. HARDWARE CHECK](#hardware-check)
+- [2. Hardware Check](#hardware-check)
 
 
 
 <h1 id="bios">1. BIOS<a href="#bios"></a></h1>
-Configuring your BIOS settings is the most important step if you really need performance improvements.
+Configuring your BIOS settings is the most important step if you're looking to improve performances.
 
 <h2 id="bios-update">1.1. BIOS Update<a href="#bios-update"></a></h2>
-Make sure your BIOS is up to date to the latest version (non beta) before doing anything
+Make sure your BIOS is up to date (latest non-beta version) before doing anything.
 
 <h2 id="bios-settings">1.2. BIOS Settings<a href="#bios-settings"></a></h2>
-You should at least apply basic BIOS settings like XMP/EXPO/DOCP, remove power saving features, enable resizable bar, basic overclock settings with PBO on AMD cpus, Fan curve and disable auto download motherboard software (if you play games with demanding anti-cheats, make sure to enable their BIOS needed settings)
+At least, you should: enable XMP/EXPO/DOCP, disable power-saving features, enable resizable bar, apply basic overclock settings with PBO on AMD CPUs, set a proper fan curve, and disable auto download motherboard software. If you play games with demanding anti-cheats, make sure to enable their required BIOS settings.
 
 
-<h1 id="hardware-check">2. HARDWARE CHECK<a href="#hardware-check"></a></h1>
+<h1 id="hardware-check">2. Hardware Check<a href="#hardware-check"></a></h1>
