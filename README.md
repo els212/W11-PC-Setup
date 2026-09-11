@@ -33,13 +33,14 @@ At a minimum, you should: enable XMP/EXPO/DOCP, disable power-saving features, e
 
 
 <h1 id="windows-reset">3. Windows Reset<a href="#windows-reset"></a></h1>
-You should follow this guide to install Windows without a microsoft account and avoid automatic drivers downloads. Plug in a USB stick of at least 8GB to proceed. Make sure to save the files on your USB stick because this will erase everything.<br>
+You should follow this guide to install Windows without a microsoft account and avoid automatic driver downloads. Plug in a USB stick of at least 8GB to proceed. Make sure to save the files on your USB stick because this will erase everything.<br>
 Download:<br>
-    - Windows 11 ISO: https://www.microsoft.com/en-us/software-download/windows11<br>
-    - Rufus: https://rufus.ie/en/<br>
+- Windows 11 ISO: https://www.microsoft.com/en-us/software-download/windows11<br>
+- Rufus: https://rufus.ie/en/<br>
+- Network Driver: https://google.com<br>
 Then set up your USB stick to make it bootable and install Windows with. It can take longer depending on your network and USB speed.
 
-When your USB stick is ready, create a .reg file and paste this:
+When your USB stick is ready, drag network driver inside then create a .reg file and paste this:
 ```reg
 Windows Registry Editor Version 5.00
 ; Fichier créé et edité par el.s212 le 10/09/2026 et mis à jour le 10/09/2026
@@ -59,3 +60,7 @@ Then install Windows with network cable unplugged. When you're in OOBE setup, if
 oobe\bypassnro
 ```
 Proceed to normal setup without a microsoft account. Once on the desktop, run the `.reg` that you created. Restart your PC and plug your network cable back in.
+
+
+<h1 id="peripherals-setup">4. Peripherals Setup<a href="#peripherals-setup"></a></h1>
+I highly recommend setting up your peripherals first because we will then disable HID devices, and you will no longer be able to edit them unless you re-enable these devices.
