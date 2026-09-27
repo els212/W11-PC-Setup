@@ -26,6 +26,7 @@ Windows Registry Editor Version 5.00
 "Start_ShowMyMusic"=dword:00000000
 "Start_ShowRecentDocs"=dword:00000000
 "Start_ShowRecentRun"=dword:00000000
+"Start_ShowRun"=dword:00000000
 "Start_ShowCommandPrompt"=dword:00000001
 
 ; Style menu demarrer
@@ -43,6 +44,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "ShowNotificationIcon"=dword:00000000
+"TaskbarDa"=dword:00000000
 
 ; Explorateur de fichiers
 [HKEY_CURRENT_USER\Software\StartIsBack]
